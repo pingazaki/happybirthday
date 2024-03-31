@@ -100,19 +100,26 @@
 </head>
 <body style="margin: 0; padding: 0; background: #fff;">
 
-    <button class="bubbly-button">Uai'dan mesajınız var</button>
-
+    <button class="bubbly-button">Uai'dan mesajınız var okumak için butona bas</button>
+ 
     <div class="container" 
     style="
     background: #fff;
 
-    position: fixed; 
+    position: relative; 
     top: 0; left: 0;
-    display: flex; align-items: center; justify-content: center; 
-    height: 100vh; width: 100vw; 
-    transform: scale(0); transform-origin: top; transition: .5s ease all;">
+    display: none; align-items: center; justify-content: center; 
+    height: 100%; width: 100%; 
+    ">
         <div class="container-off" style="max-width: 800px; margin: auto;">
+         
             <img style="box-shadow: 0 0 10px #00000041;" width="100%" height="100%" src="U.A.I.png" alt="Happybirthday">
+              <div class="slayt" style="max-width: 1200px;margin: auto; height: 300px;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JwK009kqDB0"
+                  title="The Weeknd singing &quot;Happy Birthday&quot; (Birthday Special)" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
         </div>
     </div>
 
@@ -168,10 +175,10 @@
                 btn.innerHTML = "Yazılmıştır"
             }, 8550);
             setTimeout(() => {
-                btn.innerHTML = "1 Saniye abisi"
+                btn.innerHTML = "Mesaj açıldı abisiiii"
             }, 9550);
             setTimeout(() => {
-                container.style.transform = "scale(1)"
+                container.style.display = "flex"
             }, 10550);
         })
     </script>
